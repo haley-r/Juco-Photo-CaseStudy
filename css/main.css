@@ -95,12 +95,38 @@ textarea {
     padding: 0.2em 0;
 }
 
-
-
-
  /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*True for home page Regardless of size:
+    -'juco' and 'menu' are fixed, black, turn gray when hovered over
+    -nav links are hidden
+
+
+    -thumbnail images are in order left->right top->bottom, but the columns are vertical not horizontal
+    -when user hovers over a thumbnail image, there is a tint of color that corellates to that specific thumbnail image. When the page is loaded, sometimes you see full opacity versions of those same colors in place of the images.
+
+
+    -when 'menu' is clicked, replace the word 'menu' with the word 'close' and show nav links
+
+    -nav links scroll horizontally/cyclically until hovered
+    -current selected is different color and static
+    -when hovering over the moving li, the color changes (inverts? swaps?)
+    -when hovering over the text area (middle section vertically) the scroll stops*/
+
+/*BREAKING POINTS FOR THUMBNAIL DISPLAY
+
+    -up to 764px wide: 3 wide. left/right margins around body and gutters between pictures/columns are either fixed or a small percentage, I can't tell right now if it scales or not.
+
+    -765 to 980 px wide: 5 images wide 
+
+    -up until 980 px top margin seems to be a percentage that scales
+
+    981 to full screen: 10 images wide
+    top body margin and font size for juco and menu seem to scale proportionately
+
+
+
 
 
 
