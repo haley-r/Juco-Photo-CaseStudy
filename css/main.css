@@ -7,6 +7,11 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
+ @font-face {
+     font-family: "Primetime";
+     src: url('PRIMETIME ╕ PERSONAL USE ONLY.ttf');
+ }
+
  
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -98,25 +103,111 @@ textarea {
  /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/*True for home page Regardless of size:
-    -'juco' and 'menu' are fixed, black, turn gray when hovered over
-    -nav links are hidden
+
+/*True Sitewide:*/
+
+    /*BORDER-BOX reset*/
+    * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+    /*Main Font, all caps all the time:*/
+        body{
+            font-family: 'Primetime', sans-serif;
+            text-transform: uppercase;
+            color: #000;
+            font-size: medium;
+            position: relative;
+            text-align: center;
+        }
+
+    /*hide nav by default*/
+        nav{
+            display: none;
+        }
+
+    /*when 'menu' is clicked, replace the word 'menu' with the word 'close' and show nav links*/
+        .nav-open{
+            display: block;
+            /*add more here*/
+        }
+    
+    /*nav links scroll horizontally/cyclically until hovered*/
+
+    /*current selected is different color and static*/
+
+    /*when hovering over the moving li, the color changes (inverts? swaps?)*/
+
+    /*when hovering over the text area (middle section vertically) the scroll stops*/
+        
+
+    /*no link styling (color or underline) by default*/
+        a{
+            color:inherit;
+            text-decoration: none;
+        }
 
 
-    -thumbnail images are in order left->right top->bottom, but the columns are vertical not horizontal
-    -when user hovers over a thumbnail image, there is a tint of color that corellates to that specific thumbnail image. When the page is loaded, sometimes you see full opacity versions of those same colors in place of the images.
+/*True for home page Regardless of size:*/
+    /*'juco' and 'menu' are same size, black, turn gray when hovered over, in left/right corner respectively*/
+        header h1, h2{
+            font-size: 1.5em;
+            position: absolute;
+            margin: 0;
+        }
+
+        header h1{
+            top: 0;
+            left:0;
+        }
+
+        header h2{
+            top: 0;
+            right:0;
+        }
+
+        header h1:hover,h2:hover{
+            color: #666;
+        }  
+        
+    /*thumbnail section is centered*/
+        #thumbnails{
+            margin: 0 auto;
+        }
+    /*thumbnail images are in order left->right top->bottom, but the columns are vertical not horizontal*/
+
+    /*when user hovers over a thumbnail image, there is a tint of color that corellates to that specific thumbnail image. When the page is loaded, sometimes you see full opacity versions of those same colors in place of the images*/
 
 
-    -when 'menu' is clicked, replace the word 'menu' with the word 'close' and show nav links
 
-    -nav links scroll horizontally/cyclically until hovered
-    -current selected is different color and static
-    -when hovering over the moving li, the color changes (inverts? swaps?)
-    -when hovering over the text area (middle section vertically) the scroll stops*/
 
-/*BREAKING POINTS FOR THUMBNAIL DISPLAY
+/*BREAKING POINTS FOR THUMBNAIL DISPLAY*/
 
-    -up to 764px wide: 3 wide. left/right margins around body and gutters between pictures/columns are either fixed or a small percentage, I can't tell right now if it scales or not.
+    /*up to 764px wide, default, no media query*/
+        /*3 wide*/
+
+            body{
+                margin: 0 3% 0 3%;
+            }
+
+            #thumbnails{
+                border: 5px solid blue;
+                overflow: auto;
+                margin-top: 5%;
+            }
+
+            #thumbnails a{
+                display: block;
+                width: 33.3%;
+                float: left;
+            }
+
+            #thumbnails a img{
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        
+        
+        /*left/right margins around body and gutters between pictures/columns are either fixed or a small percentage, I can't tell right now if it scales or not.
 
     -765 to 980 px wide: 5 images wide 
 
@@ -136,17 +227,6 @@ textarea {
 
     -996+ pixels wide:font-size scales proportionately. image width is fixed.
     -995 and less: image is 100% width. font size fixed.*/
-
-
-
-
-
-
-
-
-
-
-
 
 
 
