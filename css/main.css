@@ -119,19 +119,44 @@ textarea {
             text-align: center;
         }
 
-    /*hide nav by default*/
+    /*hide nav by default, but when displayed have rules*/
         nav{
             display: none;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background:#fff;
+        }
+
+        nav sup{
+            font-family: 'Arial', sans-serif;
+            font-size: .5em;
+        }
+
+        nav ul{
+            list-style: none;
+            padding:0;
+            margin: 0;
+        }
+
+        nav li{
+            border-top: 1px solid #000;
+            height: 100px;
+        }
+
+        nav li:hover, a:active{
+            background-color:#000;
+            color: #fff;
+            border-top: #fff;
         }
 
         .menu-toggle{
             cursor:pointer;
         }
 
-    /*when 'menu' is clicked, replace the word 'menu' with the word 'close' and show nav links*/
+    /*when 'menu' is clicked, display based on rules above*/
         .nav-open{
             display: block;
-            /*add more here*/
         }
     
     /*nav links scroll horizontally/cyclically until hovered*/
@@ -155,6 +180,7 @@ textarea {
 
         header{
             height:2em;
+            z-index: 2;
         }
         header h1, h2{
             font-size: 1.5em;
@@ -191,10 +217,6 @@ textarea {
 
     /*up to 760px wide, default, no media query*/
         /*3 wide*/
-
-            body{
-                margin: 0 3% 0 3%;
-            }
 
             #thumbnails{
                 overflow: auto;
