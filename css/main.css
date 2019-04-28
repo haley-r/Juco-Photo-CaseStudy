@@ -155,7 +155,7 @@ textarea {
         }
 
     /*when 'menu' is clicked, display based on rules above*/
-        .nav-open{
+        .nav-open nav{
             display: block;
         }
     
