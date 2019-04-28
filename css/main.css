@@ -123,7 +123,22 @@ textarea {
     -up until 980 px top margin seems to be a percentage that scales
 
     981 to full screen: 10 images wide
-    top body margin and font size for juco and menu seem to scale proportionately
+    top body margin and font size for juco and menu seem to scale proportionately*/
+
+/*TRUE REGARDLESS OF SIZE, PROJECT PAGE:
+    -icon size
+    -color : light blue
+    -hover over header text or +: red
+    -hover over -: pink
+    -menu colors=page colors (text is blue, background is sometimes pink sometimes red) but same effects as home menu
+
+/*BREAKING POINTS FOR PROJECT PAGE
+
+    -996+ pixels wide:font-size scales proportionately. image width is fixed.
+    -995 and less: image is 100% width. font size fixed.*/
+
+
+
 
 
 
