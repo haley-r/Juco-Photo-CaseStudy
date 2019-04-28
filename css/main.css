@@ -174,6 +174,11 @@ textarea {
             text-decoration: none;
         }
 
+    /*don't show 'featured projects*/
+        h3{
+            display: none;
+        }
+
 
 /*True for home page Regardless of size:*/
     /*'juco' and 'menu' are same size, black, turn gray when hovered over, in left/right corner respectively*/
@@ -256,9 +261,6 @@ textarea {
             padding-right: .5%;
         }
 
-        header h1,h2{
-            font-size:;
-        }
     }
 
 
