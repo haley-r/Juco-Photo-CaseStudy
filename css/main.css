@@ -124,6 +124,10 @@ textarea {
             display: none;
         }
 
+        .menu-toggle{
+            cursor:pointer;
+        }
+
     /*when 'menu' is clicked, replace the word 'menu' with the word 'close' and show nav links*/
         .nav-open{
             display: block;
@@ -148,6 +152,10 @@ textarea {
 
 /*True for home page Regardless of size:*/
     /*'juco' and 'menu' are same size, black, turn gray when hovered over, in left/right corner respectively*/
+
+        header{
+            height:2em;
+        }
         header h1, h2{
             font-size: 1.5em;
             position: absolute;
@@ -181,7 +189,7 @@ textarea {
 
 /*BREAKING POINTS FOR THUMBNAIL DISPLAY*/
 
-    /*up to 764px wide, default, no media query*/
+    /*up to 760px wide, default, no media query*/
         /*3 wide*/
 
             body{
@@ -189,15 +197,15 @@ textarea {
             }
 
             #thumbnails{
-                border: 5px solid blue;
                 overflow: auto;
-                margin-top: 5%;
+                margin-top: 2%;
             }
 
             #thumbnails a{
                 display: block;
                 width: 33.3%;
                 float: left;
+                padding-right:1%;
             }
 
             #thumbnails a img{
@@ -209,12 +217,31 @@ textarea {
         
         /*left/right margins around body and gutters between pictures/columns are either fixed or a small percentage, I can't tell right now if it scales or not.
 
-    -765 to 980 px wide: 5 images wide 
+    /*765 to 980 px wide: 5 images wide*/
+    @media screen and (min-width: 765px) and (max-width: 980px){
+            #thumbnails a{
+                width: 20%;
+                padding-right: .5%;
+            }
+        }
 
-    -up until 980 px top margin seems to be a percentage that scales
-
-    981 to full screen: 10 images wide
+    /*up until 980 px top margin seems to be a consistent percentage that scales*/
+    /*981 to full screen: 10 images wide
     top body margin and font size for juco and menu seem to scale proportionately*/
+    @media screen and (min-width: 981px){
+        #thumbnails a{
+            width: 10%;
+            padding-right: .5%;
+        }
+
+        header h1,h2{
+            font-size:;
+        }
+    }
+
+
+
+    ============================================================
 
 /*TRUE REGARDLESS OF SIZE, PROJECT PAGE:
     -icon size
