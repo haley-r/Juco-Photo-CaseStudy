@@ -137,9 +137,8 @@ textarea {
             top:0;
             display: block;
             height: 80px;
-            border: 1px solid blue;
             width: 100%;
-            padding-top: 1.2rem;
+            padding-top: 3%;
         }
 
         header h1, h2{
@@ -150,9 +149,8 @@ textarea {
         }
 
         header h2{
-           position: absolute;
-           right: 0;
-           top:1.2rem;
+           text-align: right;
+           float: right;
         }
 
         header h1:hover,h2:hover{
@@ -170,7 +168,7 @@ textarea {
             #thumbnails{
                 overflow: auto;
                 text-align: center;
-                padding: 12% 4% 0 4%;
+                padding: 11% 4% 0 4%;
             }
 
             #thumbnails a{
@@ -190,44 +188,45 @@ textarea {
         /*left/right margins around body and gutters between pictures/columns are either fixed or a small percentage, I can't tell right now if it scales or not.
 
 /*hide nav by default, but when displayed have rules*/
-nav{
-    display: none;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background:#fff;
-}
+        nav{
+            display: none;
+            position: fixed;
+            bottom: 0;
+            margin-top: 80px;
+            width: 100%;
+            background:#fff;
+        }
 
-nav sup{
-    font-family: 'Arial', sans-serif;
-    font-size: .5em;
-}
+        nav sup{
+            font-family: 'Arial', sans-serif;
+            font-size: .5em;
+        }
 
-nav ul{
-    list-style: none;
-    padding:0;
-    margin: 0;
-}
+        nav ul{
+            list-style: none;
+            padding:0;
+            margin: 0;
+        }
 
-nav li{
-    border-top: 1px solid #000;
-    height: 100px;
-}
+        nav li{
+            border-top: 1px solid #000;
+            height: 100px;
+        }
 
-nav li:hover, a:active{
-    background-color:#000;
-    color: #fff;
-    border-top: #fff;
-}
+        nav li:hover, a:active{
+            background-color:#000;
+            color: #fff;
+            border-top: #fff;
+        }
 
-.menu-toggle{
-    cursor:pointer;
-}
+        .menu-toggle{
+            cursor:pointer;
+        }
 
-/*when 'menu' is clicked, display based on rules above*/
-.nav-open nav{
-    display: block;
-}
+        /*when 'menu' is clicked, display based on rules above*/
+        .nav-open nav{
+            display: block;
+        }
 
 /*nav links scroll horizontally/cyclically until hovered*/
 
