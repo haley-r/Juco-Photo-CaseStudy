@@ -23,7 +23,7 @@
             position: fixed;
             top:0;
             width: 100%;
-            padding: 3.5% 0 3% 0;
+            padding-top: 3.5%;
         }
 
             header h1, h2{
@@ -52,7 +52,7 @@
                 background: blue;
                 overflow: auto;
                 text-align: center;
-                margin: 11% 4% 0 4%;
+                margin: 10% 4% 0 4%;
             }
 
                 #thumbnails h3{
@@ -85,10 +85,21 @@
 
 /*----------------980px+-wide---------------------------------------*/
     @media screen and (min-width: 981px){
-        #thumbnails a{
-            width: 10%;
-            padding-right: .5%;
+        header{
+            padding-top: 1.5%;
         }
+            header h1, h2{
+                margin: 0 1.5%;
+                font-size: 2vw;
+            }
+
+        #thumbnails{
+            margin: 5% 1.5% 0 1.5%;
+        }
+            #thumbnails a{
+                width: 10%;
+                padding-right: .5%;
+            }
 
     }
         
