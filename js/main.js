@@ -22,7 +22,7 @@ ToggleName.addEventListener('click', function(){
 }
 )
 
-/*this javascript is basically copied from Andy Barefoot's article: https://medium.com/@andybarefoot/a-masonry-style-layout-using-css-grid-8c663d355ebb */
+/*this javascript is copied from Andy Barefoot's article: https://medium.com/@andybarefoot/a-masonry-style-layout-using-css-grid-8c663d355ebb */
 
 function resizeGridItem(item){
     grid = document.getElementsByClassName("grid")[0];
