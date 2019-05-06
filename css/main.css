@@ -132,7 +132,7 @@ textarea {
                 display: inline;
                 font-size: 20px;
                 margin: 0 4%;
-                transition: color .4s ease;
+                transition: color .25s ease-in-out;
             }
 
             header h2{
@@ -150,22 +150,29 @@ textarea {
         .gallery{
             margin: 10% 4% 0 4%;
             display: grid;
-            grid-gap: .75vw;
-            grid-template-columns: repeat(auto-fill, minmax(50px,1fr));
+            grid-gap: 0 .75vw;
             grid-template-columns: auto auto auto;
-            grid-auto-rows: 2px;
+            grid-auto-rows: 1px;
         }
 
             .gallery h3{
                 display: none;
             }
 
-            a img{
-                width:100%;
+            .thumbnail{
+                margin-bottom: .75vw;
             }
 
-            a:hover img{
-                opacity: .8;
+            .thumbnail img{
+                display:block;
+                padding-bottom: .75vw;
+                width:100%;
+                opacity: 1;
+                transition: opacity .25s ease-in-out;
+            }
+
+            .thumbnail:hover img{
+                opacity:.8;
             }
                 /*unique background colors for each thumbnail image*/
                     #emoss{background:#b11815;}
@@ -233,7 +240,6 @@ textarea {
         }
 
 
-
     /*when 'menu' is clicked, display based on rules above*/
     .nav-open nav{
         display: block;
@@ -248,9 +254,16 @@ textarea {
 /*--------------765px-to-980px-wide---------------------------------*/
     @media screen and (min-width: 765px) and (max-width: 980px){
         .gallery{
-            grid-gap: .5vw;
+            grid-gap: 0 .5vw;
             grid-template-columns: auto auto auto auto auto;
         }
+            .thumbnail{
+                margin-bottom: .5vw;
+            }
+
+            .thumbnail img{
+                padding-bottom: .5vw;
+            }
     }
 
 /*----------------980px+-wide---------------------------------------*/
@@ -265,9 +278,16 @@ textarea {
 
         .gallery{
             margin: 5% 1.5% 0 1.5%;
-            grid-gap: .5vw;
+            grid-gap: 0 .5vw;
             grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
         }
+            .thumbnail{
+                margin-bottom: .5vw;
+            }
+
+            .thumbnail img{
+                padding-bottom: .5vw;
+            }
            
         nav{
             position: fixed;
@@ -276,12 +296,7 @@ textarea {
             nav li{padding: 7.3vh 0;}
 
             li a{font-size: 6.5vh;}
-    
-          
-    
-    
-
-    }
+   }
 
 
 

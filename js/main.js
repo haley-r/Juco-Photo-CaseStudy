@@ -28,7 +28,7 @@ function resizeGridItem(thumbnail){
     grid = document.getElementsByClassName("gallery")[0];
     rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
     rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
-    rowSpan = Math.ceil((thumbnail.querySelector('.content').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
+    rowSpan = Math.ceil((thumbnail.querySelector('.thumbnail img').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
     thumbnail.style.gridRowEnd = "span "+rowSpan;
 }
  
