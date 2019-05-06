@@ -22,70 +22,34 @@ ToggleName.addEventListener('click', function(){
 }
 )
 
-/*this javascript is copied from Andy Barefoot's article: https://medium.com/@andybarefoot/a-masonry-style-layout-using-css-grid-8c663d355ebb */
+/*this javascript is copied, with modifications to some class/function names by me, from Andy Barefoot's article: https://medium.com/@andybarefoot/a-masonry-style-layout-using-css-grid-8c663d355ebb */
 
-function resizeGridItem(item){
-    grid = document.getElementsByClassName("grid")[0];
+function resizeGridItem(thumbnail){
+    grid = document.getElementsByClassName("gallery")[0];
     rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
     rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
-    rowSpan = Math.ceil((item.querySelector('.content').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
-    item.style.gridRowEnd = "span "+rowSpan;
- }
+    rowSpan = Math.ceil((thumbnail.querySelector('.content').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
+    thumbnail.style.gridRowEnd = "span "+rowSpan;
+}
  
- function resizeAllGridItems(){
-    allItems = document.getElementsByClassName("item");
+function resizeAllGridItems(){
+    allItems = document.getElementsByClassName("thumbnail");
     for(x=0;x<allItems.length;x++){
-       resizeGridItem(allItems[x]);
-    }
- }
- 
- window.onload = resizeAllGridItems();
- 
- window.addEventListener("resize", resizeAllGridItems);
- 
- allItems = document.getElementsByClassName("item");
- for(x=0;x<allItems.length;x++){
-    imagesLoaded( allItems[x], resizeInstance);
- }
- 
- function resizeInstance(instance){
-    item = instance.elements[0];
-    resizeGridItem(item);
- }
-
-/*
-function resizeThumbnail(thumblink) {
-    gallery = document.getElementById("thumbnails")[0];
-
-    rowHeight = parseInt(window.getComputedStyle(gallery) .getPropertyValue('grid-auto-rows'));
-
-    rowGap = parseInt(window.getComputedStyle(gallery) .getPropertyValue('grid-row-gap'));
-
-    rowSpan = Math.ceil((item.querySelector('.thumbimage') .getBoundingClientRect().height+rowGap)/(rowHeight + rowGap));
-
-    item.style.gridRowEnd = "span "+rowSpan;  
-}
-
-function resizeAllThumbnails() {
-    allThumbnails = document.getElementsByClassName("thumblink");
-    for (x=0;x<allThumbnails.length;x++) {
-        resizeThumbnail(allThumbnails[x]);
+        resizeGridItem(allItems[x]);
     }
 }
 
-window.onload = resizeAllThumbnails();
+window.onload = resizeAllGridItems();
+window.addEventListener("resize", resizeAllGridItems);
 
-window.addEventListener("resize", resizeAllThumbnails);
-
-allThumbnails = document.getElementsByClassName("thumblink");
-for(x=0;x<allThumbnails.length;x++){
-    imagesLoaded(allThumbnails[x],resizeInstance);
+allItems = document.getElementsByClassName("thumbnail");
+for(x=0;x<allItems.length;x++){
+    imagesLoaded(allItems[x], resizeInstance);
 }
 
 function resizeInstance(instance){
-    thumblink = instance.elements[0];
-    resizeThumbnail(thumblink);
+    thumbnail = instance.elements[0];
+    resizeGridItem(thumbnail);
 }
-*/
 
 

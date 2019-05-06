@@ -147,7 +147,7 @@ textarea {
                 cursor:pointer;
             }
 
-        #thumbnails{
+        .gallery{
             margin: 10% 4% 0 4%;
             display: grid;
             grid-gap: .75vw;
@@ -156,13 +156,35 @@ textarea {
             grid-auto-rows: 2px;
         }
 
-            #thumbnails h3{
+            .gallery h3{
                 display: none;
             }
 
             a img{
                 width:100%;
             }
+
+            a:hover img{
+                opacity: .8;
+            }
+                /*unique background colors for each thumbnail image*/
+                    #emoss{background:#b11815;}
+                    #alia{background:#980619;}
+                    #target-bags{background:#8a020c;}
+                    #bluerobe{background:#93081f;}
+                    #joker{background:#d02320;}
+                    #tealhead{background:#850225;}
+                    #rosegarden{background:#b9211e;}
+                    #badminton-hat{background:#b02020;}
+                    #kiss-diamond{background:#b2041b;}
+                    #petal-tears{background:#780316;}
+                    #velvet-trenchcoat{background: #891e30;}
+                    #palm-corner{background:#c80935;}
+                    #pinkjello{background:#e44d7a;}
+                    #paperjello{background:#cf4264;}
+                    #pinkfrida{background:#e9497d;}
+                    #auras{background:#d84e6b;}
+
 
 /*------------------------menu-rules-----------------------------------*/
     nav{
@@ -225,7 +247,7 @@ textarea {
 
 /*--------------765px-to-980px-wide---------------------------------*/
     @media screen and (min-width: 765px) and (max-width: 980px){
-        #thumbnails{
+        .gallery{
             grid-gap: .5vw;
             grid-template-columns: auto auto auto auto auto;
         }
@@ -241,7 +263,7 @@ textarea {
                 font-size: 2vw;
             }
 
-        #thumbnails{
+        .gallery{
             margin: 5% 1.5% 0 1.5%;
             grid-gap: .5vw;
             grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
