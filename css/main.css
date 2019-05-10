@@ -125,7 +125,6 @@ textarea {
             position: fixed;
             top:0;
             width: 100%;
-            height: 100vh;
             padding-top: 3.5%;
         }
             header h1, h2{
@@ -172,9 +171,11 @@ textarea {
             }
 
             .thumbnail:hover img{
-                opacity:.8;
+                opacity:.65;
             }
                 /*unique background colors for each thumbnail image*/
+
+                 
                     #emoss{background:#b11815;}
                     #alia{background:#980619;}
                     #target-bags{background:#8a020c;}
@@ -191,7 +192,77 @@ textarea {
                     #paperjello{background:#cf4264;}
                     #pinkfrida{background:#e9497d;}
                     #auras{background:#d84e6b;}
-
+                    #maddiez{background:#f199a5;}
+                    #voguepink{background:#2790a2;}
+                    #milk{background:#f7c4c2;}
+                    #gloss{background:#ea3989;}
+                    #queens{background:#fedfee;}
+                    #plaid{background:#bc53a7;}
+                    #paper-women{background:#e4150d;}
+                    #troyesivan{background:#b1a1dc;}
+                    #turbans{background:#698bd2;}
+                    #cushion{background:#703eb4;}
+                    #nyfw{background:#caa4de;}
+                    #surfer{background:#c3a9f3;}
+                    #greenlady{background:#894460;}
+                    #chairs{background:#944386;}
+                    #bigsean{background:#fe43da;}
+                    #beachbabe{background:#54268d;}
+                    #greenlady2{background:#4ea5d0;}
+                    #sophiapalm{background:#387dcb;}
+                    #bluerose{background:#1a74c7;}
+                    #yellowcoat{background:#2c67e5;}
+                    #yellowrobe{background:#0b3599;}
+                    #paper2{background:#487bd7;}
+                    #solange{background:#70b0cc;}
+                    #kimk{background:#7fc8e9;}
+                    #noveau{background:#2991b8;}
+                    #tennis{background:#2a73a6;}
+                    #complex{background:#78ade1;}
+                    #wapo{background:#7ea5c6;}
+                    #naha{background:#6185b4;}
+                    #gauze{background:#639ca8;}
+                    #lilmiquela{background:#5782a4;}
+                    #lsd{background:#4dadc6;}
+                    #stripey{background:#67b0d5;}
+                    #plaid2{background:#99d6c8;}
+                    #lightswirl{background:#9edcd5;}
+                    #twins{background:#b2e0cd;}
+                    #pool{background:#9adee1;}
+                    #mglitter{background:#a1c9c9;}
+                    #slash{background:#aae3da;}
+                    #greenbrier{background:#c2e9d4;}
+                    #cutotb{background:#5abea6;}
+                    #sooj{background:#99a388;}
+                    #veil{background:#57a385;}
+                    #neontub{background:#94d7cd;}
+                    #bloomsbury{background:#7d915c;}
+                    #greendress{background:#616d2f;}
+                    #leafstairs{background:#2fa547;}
+                    #tylerhat{background:#9bc060;}
+                    #greenplaid{background:#9aa002;}
+                    #queengreen{background:#dad26d;}
+                    #shannon{background:#ded925;}
+                    #naha{background:#e7e4ad;}
+                    #lena{background:#e3ca27;}
+                    #greenhouse{background:#d9b23b;}
+                    #ering{background:#feed5f;}
+                    #r29{background:#ffea41;}
+                    #ericw{background:#e3bd3e;}
+                    #peterjesen{background:#feef92;}
+                    #lightyellow{background:#fef165;}
+                    #orangeflowers{background:#eaa51a;}
+                    #brothers{background:#c99732;}
+                    #nylonface{background:#c79222;}
+                    #tylercap{background:#d9bb7d;}
+                    #fruits{background:#a25e2f;}
+                    #dallas{background:#c17d39;}
+                    #veil2{background:#da892f;}
+                    #orangejello{background:#b16d26;}
+                    #hayleyk{background:#ff6e2b;}
+                    #orangejello2{background:#d05313;}
+                    #adidas{background:#e4a00f;}
+                    #tropicalia{background:#e97730;}
 
 /*------------------------menu-rules-----------------------------------*/
     nav{
@@ -247,6 +318,7 @@ textarea {
 
     .nav-open header{
         background: #fff;
+        height: 100vh;
     }
 
 /*=============changes based on width===============================*/
